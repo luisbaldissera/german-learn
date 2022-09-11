@@ -1,0 +1,459 @@
+[genders]
+
+Maskulin
+Feminin
+Neutrum
+
+[article]
+
+Artikel                 || Maskulin | Neutrum | Feminin | Plural      
+==========v=============||==========‡=========‡=========‡=============
+Nominativ | definiter   ||  der     |  das    |  die    | die         
+          | indefiniter ||  ein     |  ein    |  eine   | -           
+          | negativ     ||  kein    |  kein   |  keine  | keine       
+----------+-------------||----------+---------+---------+-------------
+Akkusativ | definiter   ||  den     |  das    |  die    | die         
+          | indefiniter ||  einen   |  ein    |  eine   | -           
+          | negativ     ||  keinen  |  kein   |  keine  | keine       
+----------+-------------||----------+---------+---------+-------------
+Dativ     | definiter   ||  dem     |  dem    |  der    | den (\S)n    
+          | indefiniter ||  einem   |  einem  |  einer  | - (\S)n     
+          | negativ     ||  keinem  |  keinem |  keiner | keinen (\S)n 
+----------+-------------||----------+---------+---------+-------------
+Genitiv   | definiter   ||          |         |         |             
+          | indefiniter ||          |         |         |             
+          | negativ     ||          |         |         |             
+
+[pronoum]
+
+ich
+du
+er
+sie
+wir
+ihr
+sie
+Sie
+Man
+
+[Possesivpronom]
+
+Possesivpronoum      ||     ich      |      du      |      er      |     sie     |     wir       |     ihr     |     sie     |     Sie     |
+==========v==========||==============‡==============‡==============‡=============‡===============‡=============‡=============‡=============|
+Nominativ | Maskulin || mein         | dein         | sein         | ihr         | unser         | euer        | ihr         | Ihr         |
+          | Neutrum  || mein         | dein         | sein         | ihr         | unser         | euer        | ihr         | Ihr         |
+          | Feminin  || meine        | deine        | seine        | ihre        | unsere        | eure        | ihre        | Ihre        |
+          | Plural   || meine        | deine        | seine        | ihre        | unsere        | eure        | ihre        | Ihre        |
+----------+----------||--------------+--------------+--------------+-------------+---------------+-------------+-------------+-------------|
+Akkusativ | Maskulin || meinen       | deinen       | seinen       | ihren       | unseren       | euren       | ihren       | Ihren       |
+          | Neutrum  || mein         | dein         | sein         | ihr         | unser         | euer        | ihr         | Ihr         |
+          | Feminin  || meine        | deine        | seine        | ihre        | unsere        | eure        | ihre        | Ihre        |
+          | Plural   || meine        | deine        | seine        | ihre        | unsere        | eure        | ihre        | Ihre        |
+----------+----------||--------------+--------------+--------------+-------------+---------------+-------------+-------------+-------------|
+Dativ     | Maskulin || meinem       | deinem       | seinem       | ihrem       | unserem       | eurem       | ihrem       | Ihrem       |
+          | Neutrum  || meinem       | deinem       | seinem       | ihrem       | unserem       | eurem       | ihrem       | Ihrem       |
+          | Feminin  || meiner       | deiner       | seiner       | ihrer       | unserer       | eurer       | ihrer       | Ihrer       |
+          | Plural   || meinen (\S)n | deinen (\S)n | seinen (\S)n | ihren (\S)n | unseren (\S)n | euren (\S)n | ihren (\S)n | Ihren (\S)n |
+----------+----------||--------------+--------------+--------------+-------------+---------------+-------------+-------------+-------------|
+Genitiv   | Maskulin ||              |              |              |             |               |             |             |             |
+          | Neutrum  ||              |              |              |             |               |             |             |             |
+          | Feminin  ||              |              |              |             |               |             |             |             |
+          | Plural   ||              |              |              |             |               |             |             |             |
+
+[adjetiv]
+
+[color]
+
+blau: azul, "blue"
+braun: marrom, "brown"
+dunkelblau: azul escuro, "dark blue"
+dunkelgrün: verde escuro, "dark green"
+gelb: amarelo, "yellow"
+grau: cinza, "gray"
+grün: verde, "green"
+hellblau: azul claro, "light blue"
+hellgrün: verde claro, "light green"
+lila: roxo, lilás, "purple"
+orange: laranja, "orange"
+rosa: rosa, "pink"
+rot: vermelho, "red"
+schwarz: preto, "black"
+weiß: branco, "white"
+
+[numeral]
+
+0: null
+1: eins
+2: zwei
+3: drei
+4: vier
+5: fünf
+6: sechs
+7: sieben
+8: acht
+9: neun
+10: zehn
+11: elf
+12: zwölf
+13: dreizehn
+14: vierzehn
+15: fünfzehn
+16: sechzehn
+17: siebzehn
+18: achtzehn
+19: neunzehn
+20: zwanzig
+30: dreißig
+60: sechzig
+70: siebzig
+100: einhundert
+1e3: eintausend
+1e6: einmillion
+1e9: einmilliarde
+1e12: einbillion
+
+# \n: digit n, as it was a unity.
+#   E.g.: 453 => \2 => 5
+# \0n: digit n, considering decimal conversion
+#   E.g.: 453 => \02 => 50
+#02: (\2)zig
+#2: (\1)und(\02)
+#3: (\3)hundert(\2\1)
+#4: (\4\3)hundert(\2\1)
+#6: (\6..\4)tausend(\3..\1)
+#9: (\9..\7)million(\6..\1)
+#12: (\12..\10)milliarde(\9..\1)
+#15: (\15..\13)billion(\12..\1)
+
+[verb]
+
+abbiegen: virar, "to turn"
+abfahren: partir, "depart"
+abholen: buscar, pegar, "to fetch", "to pick up"
+abrufen: recuperar, checar, "to check", "to recover"
+abschicken: mandar, enviar, "to send"
+anfangen: começar, "to start"
+ankommen: chegar, "to arrive"
+anmachen: ligar, "to turn on"
+anrufen: ligar, "to call"
+antworten: responder (a alguém), "to answer (someone)"
+arbeiten: trabalhar, "to work"
+aufhören: parar, chegar
+aufmachen: abrir, "to open"
+aufpassen: cuidar, assistir, ver, "to see", "to take care", "to attend"
+aufräumen: limpar, organizar, arrumar, "to clear"
+aufregen: animar, excitar
+aufschreiben: escrever, anotar, "to write down"
+aufstehen: acordar, levantar, "to wake up", "to get up"
+ausschneiden: recortar, "to cut"
+aussteigen: sair, "to get out", "to exit"
+ausziehen: se mudar, "to move"
+bauen: montar, construir, "to build"
+beantworten: responder (a algo), "to answer (something)"
+bearbeiten: editar, "to edit"
+bedeuten: significar, "to mean"
+beginnen: começar, "to start"
+bekommen: receber, obter
+benutzen: utilizar, usar, "to use"
+bestellen: pedir, "to order"
+besuchen: visitar, "to visit"
+bewegen: mover, mexer, "to move"
+bezahlen: pagar, "to pay"
+bleiben: permanecer, ficar, "to stay"
+brauchen: precisar, "to need"
+bringen: trazer, "to bring"
+builden: compor, construir, "to build"
+danken: agradecer, "to thank"
+darstellen: representar, "to represent"
+einfügen: inserir, "to insert"
+eingeben: digitar, acessar, "to type", "to access"
+einladen: convidar, "to invite"
+einlegen: inserir, colocar, "to put"
+einnehmen: assimilar, tomar, "to take in"
+einsteigen: embarcar
+engänzen: completar, "to complete"
+erfahren: aprender, "to get to know"
+erklären: explicar, exclarecer, "to explain", "to clarify"
+erwarten: esperar (por algo), "to expect"
+erweitern: ampliar, expandir, "to expand"
+erzeugen: criar, gerar, "to create", "to generate"
+fahren: ir, conduzir, viajar
+feiern: comemorar, "to celebrate"
+fernsehen: assitir televisão, "to watch TV"
+finden: achar (opinião), encontrar, "to find", "to think"
+folgen: seguir, "to follow"
+geben: dar, "to give"
+gefallen: agradar
+gehen: ir, "to go"
+gehören: pertencer
+glauben: acreditar
+grillen: grelhar, fazer churrasco, "to grill"
+hängen: pendurar
+helfen: ajudar
+helfen: ajudar, "to help"
+hoffen: esperar (de esperança), "to hope"
+hören: ouvir, escutar, "to listen", "to hear"
+joggen: correr (esporte), "to jog"
+kaufen: comprar, "to buy"
+kennen: conhecer, saber, "to know"
+klopfen: bater
+kochen: cozinhar, "to cook"
+kosten: custar, "to cost"
+laufen: correr, "to run"
+leben: viver, "to live"
+lernen: aprender, "to learn"
+liefen: caminhar, "to walk"
+liegen: mentir, "to lie"
+löschen: apagar, "to delete"
+machen: fazer, "to make", "to do"
+malen: pintar, "to paint"
+merken: marcar, "to mark"
+mitbringen: levar (com), "to bring (someone, somthing) with"
+mitnehmen: levar (com), "to take (someone, something) with"
+nehmen: pegar, "to get"
+passieren: acontecer, se passar, "to happen"
+probieren: provar, experimentar, "to try"
+raten: aconselhar
+rauchen: fumar, "to smoke"
+reinkommen: entrar, "to come in"
+rengen: chover, "to rain"
+reparieren: reparar, consertar, "to fix"
+sagen: dizer, "to tell"
+schaden: prejudicar
+schauen: olhar, assistir, "to watch"
+schenken: presentear, "to gift"
+schlafen: dormir, "to sleep"
+schmecken: provar, experimentar, "to try"
+schmeken: saborear, gotar (sabor)
+schneiden: cortar, "to cut"
+schwimmen: nadar, "to swim"
+singen: cantar, "to sing"
+stattfinden: achar lugar, ter lugar, "to take place"
+stehen: estar (estático), "to stand"
+strammen: apertar, "to tight"
+studieren: estudar (ensino superior), "to study"
+tanzen: dançar, "to dance"
+treffen: encontrar, "to meet"
+trennen: separar, cortar, "to split", "to trim", "to cut"
+trinken: beber, tomar, "to drink"
+übernachten: pernoitar, pousar, virar a noite
+übernehmen: assumir
+überprufen: verificar, "to check", "to verify"
+überqueren: atravessar, "to cross"
+umsteigen: trocar, "to change"
+umziehen: se mudar, "to move"
+verbringen: desperdiçar, passar
+verheiraten: casar (matrimônio), "to marry"
+verstehen: entender, "to understand"
+versuchen: tentar, "to try"
+vertrauen: confiar
+vorbereiten: preparar
+warten: esperar (até algo), "to wait"
+weiterleiten: encaminhar, "to forward"
+wünschen: desejar
+zeigen: mostrar, "to show"
+zeigen: mostrar, demonstrar, "to show"
+zuhören: escutar (atentamente), ouvir (atentamente)
+zuhören: ouvir, escutar, "to listen"
+zumachen: fechar, "to close"
+zuordnen: atribuir, "to assign"
+zusammenstellen: compilar, "to put together"
+
+[adverb]
+
+[noun]
+
+Abkürzung, die: o atalho, "the shortcut"
+Angestellter, der: o trabalhador, "the employee"
+Aufschnitt, der: os frios (comida)
+Auge, das: o olho, "the eye"
+Ausflug, der: o passeio
+Ausstellung, die: a exposição, "the exposition"
+Bäckerei, die: a padaria
+Bad, das: o banheiro, "the bath"
+Badwanne, die: a banheira
+Bahnhof, der: o ponto (de ônibus), a estação (de trem), "the train station", "the bus stop"
+Balkon, der: a sacada, "the balcony"
+Bank, die: o banco (dinheiro), "the bank"
+Bar, die: o bar, "the bar"
+Bauer, der: agricultor, fazendeiro, "farmer"
+Baum, der: a árvore, "the tree"
+Beruf, der: a profissão, a ocupação, "the job", "the profession"
+Bett, das: cama, "bed"
+Bibliothek, die: a biblioteca, "the library"
+Bild, das: tela (de parede)
+Bildschirm, der: a tela, "the screen"
+Bleistift, der: o lápis, "the pencil"
+Blume, die: a flor, "the flower"
+Brief, der: a carta, "the letter"
+Briefmarke, die: o carimbo, "the stamp"
+Brille, die: os óculos, "the glasses"
+Brot, das: o pão, "the bread"
+Brötchen, das: o pãozinho, "the bread roll"
+Buch, das: o livro, "the book"
+Buchhalter, der: o contador, o contabilista, o tesoureiro, "the accountant"
+Büro, das: o escritório, "the office"
+Café, das: a cafeteria, "the caffeteria"
+Decke, die: o teto, "the ceiling"
+Dehnen, das: o alongamento
+Disco, die: a discoteca, "the disco"
+Dorf, das: a vila, a vizinhança, "the village"
+Drucker, der: a impressora, "the printer"
+Dusche, die: o chuveiro, "the shower"
+Eierkuchen, der: a panqueca, "the pancake"
+Eimer, der: o balde, "the bucket"
+Erdbeere, die: o morango, "the strawberry"
+Ergebnis, das: o resultado, "the result"
+Erklärung, die: a explicação, "the explanation"
+Etwas, das: alguma coisa, "something", "anything"
+Fahrkarte, die: o tíquete, o passe, "the ticket"
+Fahrrad, das: a bicicleta, "the bicicle", "the bike"
+Farbe, die: a cor, "the color"
+Feierabend, der: "the happy hour"
+Feiertag, der: o feriado, "the holiday"
+Film, der: o filme, "the movie"
+Firma, die: a empresa, a firma, "the company"
+Fisch, der: o peixe, "the fish"
+Flasche, die: a garrafa, "the bottle"
+Fleisch, das: a carne, "the meet"
+Flur, der: o corredor, "the hall"
+Frau, die: a mulher, "the woman"
+Freund, der: o amigo, o namorado, "the friend", "the boyfriend"
+Freundin, die: a amiga, a namorada, "the friend", "the girlfriend"
+Frühstück, das: o café da manhã, "the breakfast"
+Garten, der: o jardim, "the garden"
+Gast, der: o convidado, "the guest"
+Geduld, die: a paciência, "the patience"
+Geheimnis, das: o segredo, "the secret"
+Geld, das: o dinheiro, "the money"
+Geldstrafe, die: a multa, "the fee"
+Gemüse, das: o vegetal, o legume, "the vegetable"
+Gemüsehändler, der: a quitanda, "the greengrocer"
+Geschenk, das: o presente, "the gift"
+Geschwister, das: o irmão, a irmã, "the sibling"
+Glas, das: o copo, "the glass"
+Grammatik, die: a gramática, "the grammar"
+Grund, der: a razão, o motivo, "the reason"
+Hähnchen, das: frango, "the chicken"
+Haus, das: a casa, "the house"
+Heft, das: o caderno, "the notebook", "the booklet"
+Herkunft, die: a origem, "the origin"
+Hund, der: o cachorro, "the dog"
+Joghurt, der: o iogurt
+Kaninchen, das: o coelho, "the rabbit"
+Kartoffel, die: a batata, "the potato"
+Käse, der: o queijo, "the cheese"
+Kino, das: o cinema, "the movies"
+Kirche, die: a igreja, "the church"
+Klavier, das: o piano, "the piano"
+Kneipe, die: a taberna, "the pub"
+Kompliment, das: o elogio, "the compliment"
+Konzert, das: o concerto, "the concert"
+Kopfkissen, das: o travesseiro, "the pillow"
+Krankenschwester, die: a enfermeira, "the nurse"
+Küche, die: a cozinha, "the kitchen"
+Kuchen, der: o bolo, "the cake"
+Kuh, die: a vaca, "the cow"
+Künstler, der: artista, "artist"
+Kur, die: a cura, "the cure"
+Lampe, die: a lâmpada, "the lamp"
+Licht, das: a luz, "the light"
+Löffel, der: a colher, "the spoon"
+Mann, der: o homem, "the man"
+Matratze, die: o colchão, "the mattress"
+Meer, das: o mar, "the sea"
+Miete, die: o aluguel, "the rent"
+Milch, die: o leite, "the milk"
+Möbel, das: o móvel (de casa), "the furniture"
+Moderator, der: o apresentador, o moderador, "the moderator"
+Moderatorin, die: a apresentadora, a moderadora, "the moderator"
+Möglichkeit, die: a possibilidade, "the possibility"
+Mühe, die: o esforço, "the effort"
+Mülleimer, der: a lata de lixo, o lixo, "the trash can"
+Museum, das: o museu, "the museum"
+Müsli, das: os cereais, "the cereals"
+Mutter, die: a mãe, "the mother"
+Nachbar, der: o vizinho, "the neightbor"
+Nachspeise, die: a sobremesa, "the dessert"
+Nachteil, der: a desvantagem, "the disadvantage"
+Nudeln, die: a massa, o macarrão, "the noodle", "the pasta"
+Obst, das: a fruta, "the fruit"
+Öl, das: o óleo, "the oil"
+Pass, der: o passaporte, "the passport"
+Pfirsich, der: pêssego
+Pflanze, die: a planta, "the plant"
+Pflicht, die: o dever, "the duty"
+Pfund, das: libra (massa, peso), "pound"
+Praktikum, das: o estágio, "the internship"
+Präsident, der: o presidente
+Präsidentin, die: a presidente
+Puls, der: o pulso
+Reihe, die: a fileira, a fila, "the line", "the row"
+Reis, der: o arroz, "the rice"
+Rind, das: o gado, o boi, o bife, "the beef", "the cow"
+Rindfleisch, das: carne bovina
+Saft, der: o suco, "the juice"
+Salat, der: o alface, a salada, "the lettice"
+Saltz, das: o sal, "the salt"
+Sänger, der: o cantor, o vocalista, "the singer"
+Sängerin, die: a cantora, a volcalista, "the singer"
+Satz, der: a frase, "the sentence"
+Schach, das: o xadrez, "the chess"
+Schinken, der: o presunto, "the ham"
+Schirm, der: o guarda-cuva, "the umbrella"
+Schlüssel, der: a chave, "the key"
+Schokolade, die: o chocolate, "the chocolate"
+Schrank, der: guarda-roupas, "the wardrobe"
+Schuh, der: o sapato, "the shoe"
+Schwein, das: o porco, "the pig"
+Schwimmbad, das: a piscina, "the swimming pool"
+Sessel, der: a poltrona, "the armchair"
+Socke, die: a meia, "the sock"
+Sofa, das: sofá, "the sofa"
+Sohn, der: o filho, "the son"
+Sonne, die: o sol, "the sun"
+Speise, die: a comida, "the food"
+Speisekarte, die: o cardápio, "the menu"
+Spielzeug, das: o brinquedo, "the toy"
+Stadt, die: a cidade, "the city", "the town"
+Stammbaum, der: a árvore genealógica
+Strand, der: a praia, "the beach"
+Stuhl, der: cadeira, "the chair"
+Tag, der: o dia, "the day"
+Tasche, die: a bolsa, "the purse", "the bag"
+Telefon, das: o telefone, "the telephone"
+Terrace, die: o terraço, "the terrace"
+Theater, das: o teatro, "the theater"
+Theatervorstellung, die: a peça (de teatro), "the play (theater)"
+Tier, das: o animal, "the animal"
+Tipp, der: a dica, "the tip"
+Tisch, der: a mesa, "the table"
+Tischtennis, das: o tênis de mesa (jogo, esporte), "the table tennis"
+Tochter, die: a filha, "the daughter"
+Toilette, die: o banheiro, "the toilete"
+Tür, die: a porta, "the door"
+Übung, die: o exercício (para resolver)
+Uhr, die: o relógio de pulso, "the watch"
+Unternehmen, das: a empresa, a sociedade, "the company"
+Urlaub, der: as férias, "the holiday (vacations)"
+Vater, der: o pai, "the father"
+Verkehrsmittel, das: o meio de transporte, "means of transport"
+Vogel, der: pássaro, "the bird"
+Vorchlag, der: a sugestão, "the suggestion"
+Vorstellungsgespräch, das: a entrevista de emprego
+Wäschekorb, der: o cesto de roupa suja
+Wecker, der: o relógio (de escrivaninha), o alarme, "the alarm"
+Weg, der: o caminho, o jeito, a maneira, "the way"
+Wochenende, das: o fim de semana
+Wohnung, die: o apartamento, "the apartment"
+Wort, das: a palavra, "the words"
+Wurst, die: o embutido, a salsicha, "the sausage"
+Zaun, der: a cerca, o portão, "the gate"
+Zeit, die: o tempo, "the time"
+Zeitung, die: o jornal, "the newspaper"
+Zimmer, das: o cômodo, "the room"
+Zucker, der: o açucar, "the sugar"
+Zug, der: o trem, "the train"
+Zusammenbruch, der: o colapso, "the colapse"
+
+# vim: virtualedit=all filetype=de-artikel foldmethod=marker
